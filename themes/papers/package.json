@@ -1,0 +1,34 @@
+{
+  "name": "papers",
+  "version": "1.4.5",
+  "description": "A Omeka S theme for Papers of the War Department.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omeka-s-themes/papers.git"
+  },
+  "keywords": [
+    "omeka-s",
+    "theme"
+  ],
+  "author": "Omeka Team",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/omeka-s-themes/papers/issues"
+  },
+  "homepage": "https://github.com/omeka-s-themes/papers#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0"
+  },
+  "browserslist": [
+    "> 5%",
+    "> 1% in US"
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,56 @@
+themes:
+- name: Bookshelf
+  link: https://github.com/indic-archive/bookshelf/releases/download/v2.0.1/bookshelf-v2.0.1.zip
+  version: 2.0.1
+  updated: April 18, 2023
+  download: true
+- name: Center Row
+  link: https://github.com/omeka-s-themes/centerrow/releases/download/v1.8.4/theme-centerrow-v1.8.4.zip
+  version: 1.8.4
+  updated: April 18, 2024
+  download: true
+- name: Cozy
+  link: https://github.com/omeka-s-themes/cozy/releases/download/v1.6.2/theme-cozy-v1.6.2.zip
+  version: 1.6.2
+  updated: April 18, 2024
+  download: true
+- name: Default
+  link: https://github.com/omeka-s-themes/default/releases/download/v1.9.1/theme-default-v1.9.1.zip
+  version: 1.9.1
+  updated: October 28, 2024
+  download: true
+- name: Foundation
+  link: https://github.com/omeka-s-themes/foundation-s/releases/download/v1.5.3/theme-foundation-s-v1.5.3.zip
+  version: 1.5.3
+  updated: February 18, 2025
+  download: true
+- name: Freedom
+  link: https://github.com/omeka-s-themes/freedom/releases/download/v1.0.7/freedom-v1.0.7.zip
+  version: 1.0.7
+  updated: November 25, 2024
+  download: true
+- name: Lively
+  link: https://github.com/omeka-s-themes/lively/releases/download/v1.0.0/lively-v1.0.0.zip
+  version: 1.0.0
+  updated: November 21, 2024
+  download: true
+- name: Multilingual
+  link: https://github.com/ivyrze/omeka-s-theme-multilingual/releases/download/2.0/Multilingual.zip
+  version: '2.0'
+  updated: June 13, 2022
+  download: true
+- name: Papers
+  link: https://github.com/omeka-s-themes/papers/releases/download/v1.4.5/theme-papers-v1.4.5.zip
+  version: 1.4.5
+  updated: October 28, 2024
+  download: true
+- name: Thanks, Roy
+  link: https://github.com/omeka-s-themes/thanksroy/releases/download/v1.2.2/theme-thanksroy-v1.2.2.zip
+  version: 1.2.2
+  updated: October 28, 2024
+  download: true
+- name: The Daily
+  link: https://github.com/omeka-s-themes/thedaily/releases/download/v1.7.1/thedaily-1.7.1.zip
+  version: 1.7.1
+  updated: June 02, 2023
+  download: true

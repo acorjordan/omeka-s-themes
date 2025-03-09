@@ -1,0 +1,57 @@
+<?php
+$escHtml = $this->plugin('escapeHtml');
+$escAttr = $this->plugin('escapeHtmlAttr');
+
+$bannerImage              = $this->themeSettingAsset('banner_image');
+$bannerHeading            = $this->themeSetting('banner_heading');
+$bannerDescription        = $this->themeSetting('banner_description');
+$bannerButtonLabel        = $this->themeSetting('banner_button_label');
+$bannerButtonLink         = $this->themeSetting('banner_button_link');
+$bannerContentPosition    = $this->themeSetting('banner_content_position') ?? 'right';
+$bannerVerticalPosition   = $this->themeSetting('banner_v_position') ?? 'center';
+$bannerHorizontalPosition = $this->themeSetting('banner_h_position') ?? 'center';
+$decoration               = $this->themeSetting('image_decoration');
+
+
+$class = ['main-banner'];
+$hasText = false;
+if ($bannerHeading || $bannerDescription || $bannerButtonLink) {
+    $class[] = 'has-text';
+    $hasText = true;
+}
+
+$bannerHeightProperty = $hasText ? 'min-height' : 'height';
+
+$bannerInlineStyles = "{$bannerHeightProperty}: 20vh;";
+$imageInlineStyles = "object-position: {$bannerHorizontalPosition} {$bannerVerticalPosition};";
+?>
+
+<?php if ($bannerImage || $hasText) : ?>
+    <div class="<?php echo implode(' ', $class); ?>" style="<?php echo $escAttr($bannerInlineStyles); ?>">
+        <div class="container main-banner__container main-banner__container--<?php echo $bannerContentPosition; ?>">
+            <?php if ( $bannerImage ) : ?>
+                <div class="main-banner__image-wrapper">
+                    <div class="height-controller"></div>
+                    <?php echo $this->thumbnail($bannerImage, 'large', ['style' => $imageInlineStyles, 'role' => 'presentation', 'aria-hidden' => 'true']); ?>
+                </div>
+                <?php if (is_array($decoration) && in_array('banner', $decoration)) : ?>
+                    <div class="main-banner__image-shape">
+                        <?php echo $this->GetSVG('banner-shape'); ?>
+                    </div>
+                <?php endif; ?>
+            <?php endif; ?>
+
+            <div class="main-banner__content">
+                <?php if($bannerHeading) : ?>
+                    <h2 class="main-banner__heading"><?php echo $escHtml($bannerHeading); ?></h2>
+                <?php endif; ?>
+                <?php if($bannerDescription) : ?>
+                    <p class="main-banner__description"><?php echo $escHtml($bannerDescription); ?></p>
+                <?php endif; ?>
+                <?php if($bannerButtonLink) : ?>
+                    <a class="button" target="_blank" href="<?php echo $bannerButtonLink; ?>"><?php echo $bannerButtonLabel; ?></a>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

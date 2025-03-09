@@ -1,0 +1,65 @@
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+
+@mixin resource-list {
+    list-style: none;
+    margin: $spacing-unit 0;
+    border-top: 1px solid $grey-color-dark;
+    padding-top: $spacing-unit;
+    
+    .resource {
+        margin-bottom: $spacing-unit;        
+        border-bottom: 1px solid $grey-color-dark;
+        padding-bottom: $spacing-unit;
+        display: flow-root;
+    }
+    
+    .resource-link {
+        width: 100%;
+        display: inline;
+    }
+    
+    .resource .resource-link img {
+        margin-left: $spacing-unit;
+        float: right;
+        max-width: 13rem;
+    }
+    
+    .resource-link {
+        margin-bottom: 0;
+        font-variant: small-caps;
+    }
+}
+
+@mixin button {
+  cursor: pointer;
+  background-color: $light-blue-color;
+  color: #000 !important;
+  border: 1px solid #000;
+  border-width: 3px 1px 1px;
+  border-radius: 0;
+  &:disabled,
+  &.inactive {
+      background-color: $grey-color-light;
+      border: 1px solid $grey-color;
+      color: $grey-color;
+      cursor: default;
+  }
+
+}
+
+@mixin yellow {
+  background-color: $yellow-color;
+}
+
+@mixin simple-button {
+  border-width: 1px;
+}

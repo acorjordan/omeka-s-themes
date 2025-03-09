@@ -1,0 +1,43 @@
+.title,
+.block-pageTitle {
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 1.875rem !important;
+    padding-left: 18px;
+    position: relative;
+
+    &::before {
+        display: block;
+        content: "";
+        background-color: $color__primary;
+        border-radius: 5px 0 0 5px;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 8px;
+    }
+
+    .title {
+        margin-bottom: 0 !important;
+        padding-left: 0;
+
+        &::before {
+            content: none;
+        }
+    }
+
+    .slick-slide & {
+        &::before {
+            content: none;
+        }
+    }
+
+    &.has-background {
+        padding-right: 10px;
+    }
+}
+
+.title {
+    padding-bottom: 0.5rem;
+}

@@ -1,0 +1,15 @@
+<?php
+$resourceMedia = $resource->media();
+$decoration = $this->themeSetting('image_decoration');
+?>
+<?php if ($resourceMedia): ?>
+<div class="media-embeds">
+    <?php foreach ($resourceMedia as $media): ?>
+        <div class="media-embed">
+            <div class="<?php echo is_array($decoration) && in_array('media', $decoration) ? 'decoration' : ''; ?>">
+                <?php echo $media->render(); ?>
+            </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>

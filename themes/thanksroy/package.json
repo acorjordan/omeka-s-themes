@@ -1,0 +1,36 @@
+{
+  "name": "thanksroy",
+  "version": "1.2.2",
+  "description": "Thanks Roy theme for Omeka S.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omeka-s-themes/thanksroy.git"
+  },
+  "keywords": [
+    "omeka-s",
+    "theme"
+  ],
+  "author": "Omeka Team",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/omeka-s-themes/thanksroy/issues"
+  },
+  "homepage": "https://github.com/omeka-s-themes/thanksroy#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.0.0"
+  },
+  "browserslist": [
+    "> 5%",
+    "> 1% in US"
+  ],
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
