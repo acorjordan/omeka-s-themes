@@ -34,5 +34,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ghcr.io/${{ github.repository }}/omeka-s-themes:latest
-          ghcr.io/${{ github.repository }}/omeka-s-themes:${{ steps.short-sha.outputs.sha }}
+          ghcr.io/acorjordan/omeka-s-docker/omeka-s-themes:latest
+          ghcr.io/acorjordan/omeka-s-docker/omeka-s-themes:${{ steps.short-sha.outputs.sha }}
